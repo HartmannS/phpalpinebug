@@ -1,0 +1,20 @@
+<?php
+    print(phpversion());
+    print("\n");
+    $date = new DateTime();
+    $date1 = unserialize(serialize($date));
+    $date2 = new DateTime($date->format('Y-m-d H:i:s.u'));
+    print_r("start php version ".phpversion());
+    print("\n");
+    print("\n");
+    print_r("date==date1:");
+    print_r($date==$date1);
+    print("\n");
+    print_r("date==date2:");
+    print_r($date==$date2);
+    print("\n");
+    print_r("date1==date2:");
+    print_r($date1==$date2);
+    print("\n");
+    print_r("finish");
+    print("\n");

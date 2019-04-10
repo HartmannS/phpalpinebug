@@ -1,0 +1,4 @@
+FROM php:7.1.27-cli-stretch
+
+COPY . /app
+WORKDIR /app

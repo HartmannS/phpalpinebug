@@ -1,0 +1,4 @@
+FROM php:7.1.27-cli-alpine
+
+COPY . /app
+WORKDIR /app
